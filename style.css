@@ -1,0 +1,201 @@
+* {
+    position: relative;
+}
+
+body,
+html {
+    font-family: 微軟正黑體;
+}
+
+.wrapper {
+    background-color: #eeeeee;
+    min-height: 100vh;
+}
+
+
+/* --------------------- */
+
+
+/* Utility */
+
+
+/* --------------------- */
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+.u-mt-24 {
+    margin-top: 24px !important;
+}
+
+.u-mt-48 {
+    margin-top: 48px !important;
+}
+
+.u-mb-48 {
+    margin-bottom: 48px !important;
+}
+
+.u-mb-24 {
+    margin-bottom: 24px !important;
+}
+
+.u-mb-32 {
+    margin-bottom: 32px !important;
+}
+
+
+/* 只有在768px以上才有的樣式 */
+
+@media (min-width:768px) {
+    .u-pl-8--desktop {
+        padding-left: 8px !important;
+    }
+    .u-pr-8--desktop {
+        padding-right: 8px !important;
+    }
+}
+
+
+/* 只有在768px以下才有的樣式 */
+
+@media (max-width:768px) {
+    .u-mb-24---mobile {
+        margin-bottom: 24px !important;
+    }
+}
+
+
+/* --------------------- */
+
+
+/* Heading & Text */
+
+
+/* --r------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.heading {
+    font-size: 24px;
+    color: #666;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 20px;
+    color: #666;
+    font-weight: 700;
+}
+
+label {
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+
+/* --------------------- */
+
+
+/* Components */
+
+
+/* --------------------- */
+
+
+/* Card */
+
+.card {
+    padding: 48px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:768px) {
+    .card {
+        padding: 48px 16px;
+    }
+}
+
+
+/* btn */
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 12px 48px;
+    background-color: #53db9b;
+    border: 0;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: #3caa76;
+}
+
+input.btn:focus {
+    outline: 0;
+}
+
+
+/* form */
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea {
+    padding: 8px 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: 0;
+    border-color: #53db9b;
+}
